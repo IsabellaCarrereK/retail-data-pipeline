@@ -177,7 +177,8 @@ with conn.cursor() as cur:
             VALUES (
                 %s, %s, %s, %s, %s,
                 %s, %s, %s, %s, %s, %s
-            );
+            )
+            ON CONFLICT (invoice_no) DO NOTHING;
             """,
             (
                 date_key,

@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_sales (
     customer_key INTEGER NOT NULL,
     product_key INTEGER NOT NULL,
     store_key INTEGER NOT NULL,
-    invoice_no VARCHAR(20) NOT NULL,
+    invoice_no VARCHAR(20) NOT NULL UNIQUE,
     quantity INTEGER NOT NULL,
     selling_price_per_unit NUMERIC(12, 2) NOT NULL,
     cost_price_per_unit NUMERIC(12, 3) NOT NULL,

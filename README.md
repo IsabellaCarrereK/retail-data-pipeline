@@ -66,3 +66,19 @@ retail-data-pipeline/
 ```
 
 
+
+
+
+## Future Improvements
+
+
+```text
+Possible future improvements include:
+
+- Move the data warehouse to Google BigQuery
+- Automate the pipeline execution
+- Add data quality checks and logging
+- Add automated testing
+- Create a dashboard in Looker Studio
+- Explore orchestration for scheduled pipeline runs
+```

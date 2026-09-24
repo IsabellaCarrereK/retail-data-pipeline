@@ -24,6 +24,18 @@ Place the downloaded CSV file in:
 data/01_raw/Different_stores_dataset.csv
 ```
 
+## Project Goals
+
+The first version of the project focuses on building a reproducible local pipeline that transforms raw retail sales data into a structured format suitable for analysis.
+
+The goals for the initial version were to:
+
+- validate and transform raw transaction data
+- calculate sales and profit metrics
+- organize the data for analysis across customers, products, stores and time
+- load the transformed data into a PostgreSQL data warehouse
+- support rerunning the load without creating duplicate sales records
+
 ## Tech Stack
 
 - Python
@@ -154,11 +166,11 @@ The expected result is 99,457 rows.
 
 ## Future Improvements
 
-Possible future improvements include:
+Planned improvements for future versions include:
 
-- Move the data warehouse to Google BigQuery
-- Automate the pipeline execution
-- Add data quality checks and logging
-- Add automated testing
-- Create a dashboard in Looker Studio
-- Explore orchestration for scheduled pipeline runs
+- Migrate the data warehouse to Google BigQuery
+- Add automated testing and additional data quality checks
+- Add structured logging and error handling
+- Automate and schedule pipeline execution
+- Explore orchestration for managing pipeline workflows
+- Create an analytical dashboard in Looker Studio
